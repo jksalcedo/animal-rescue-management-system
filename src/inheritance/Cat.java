@@ -3,7 +3,7 @@ package inheritance;
 import encapsulation.Animal;
 
 public class Cat extends Animal {
-    private boolean isIndoor;
+    private final boolean isIndoor;
 
     public Cat(String name, int age, String condition, boolean isIndoor) {
         super(name, age, condition);

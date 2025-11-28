@@ -1,8 +1,8 @@
 package polymorphism;
 
-public class Task implements ISchedulable {
-    private String description;
-    private String dueDate;
+public class Task implements ISchedule {
+    private final String description;
+    private final String dueDate;
 
     public Task(String description, String dueDate) {
         this.description = description;

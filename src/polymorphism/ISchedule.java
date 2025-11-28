@@ -1,6 +1,6 @@
 package polymorphism;
 
-public interface ISchedulable {
+public interface ISchedule {
     void perform();
 
     String getDescription();

@@ -1,16 +1,16 @@
 package encapsulation;
 
-import abstraction.IAdmittable;
+import abstraction.IAdmission;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Animal implements IAdmittable {
+public abstract class Animal implements IAdmission {
     // Encapsulation: Private fields, public getters/setters
-    private String name;
-    private int age;
+    private final String name;
+    private final int age;
     private String condition;
     private boolean admitted;
-    private List<String> medicalRecords;
+    private final List<String> medicalRecords;
 
     public Animal(String name, int age, String condition) {
         this.name = name;

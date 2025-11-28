@@ -3,7 +3,7 @@ package inheritance;
 import encapsulation.Animal;
 
 public class Dog extends Animal {
-    private String breed;
+    private final String breed;
 
     public Dog(String name, int age, String condition, String breed) {
         super(name, age, condition);

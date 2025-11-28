@@ -1,6 +1,6 @@
 package abstraction;
 
-public interface IAdmittable {
+public interface IAdmission {
     void admit();
 
     String getAdmissionDetails();
