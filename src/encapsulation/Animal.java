@@ -6,8 +6,8 @@ import java.util.List;
 
 public abstract class Animal implements IAdmission {
     // Encapsulation: Private fields, public getters/setters
-    private final String name;
-    private final int age;
+    private String name; // Removed final to allow updates
+    private int age; // Removed final to allow updates
     private String condition;
     private boolean admitted;
     private final List<String> medicalRecords;
@@ -24,8 +24,16 @@ public abstract class Animal implements IAdmission {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public int getAge() {
         return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public String getCondition() {

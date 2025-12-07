@@ -2,7 +2,7 @@ package encapsulation;
 
 public class Volunteer {
     private final String name;
-    private final String contact;
+    private String contact; // Removed final to allow updates
 
     public Volunteer(String name, String contact) {
         this.name = name;
@@ -11,6 +11,14 @@ public class Volunteer {
 
     public String getName() {
         return name;
+    }
+
+    public String getContact() {
+        return contact;
+    }
+
+    public void setContact(String contact) {
+        this.contact = contact;
     }
 
     @Override
