@@ -1,4 +1,4 @@
-# Animal Rescue Management System (Refactored)
+# Animal Rescue Management System
 
 A simplified, input-based Animal Rescue Management System organized by OOP Pillars.
 
